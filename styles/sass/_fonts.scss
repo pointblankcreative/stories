@@ -1,0 +1,31 @@
+@mixin fontSize ($sizeValue) {
+    font-size: $sizeValue;
+    color: #4f4f4f;
+    font-family: poppins, sans-serif;
+    letter-spacing: 1px;
+    
+}
+h1 {
+    color: #fff;
+    font-size: 14vh;
+    line-height: 0.9;
+    font-weight: 700;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+}
+
+h2 {
+    @include fontSize(3rem);
+    line-height: 3.5rem;
+}
+
+h3 {
+    @include fontSize(2.5rem);
+    line-height: 3rem;
+}
+
+p {
+    @include fontSize(2rem);
+    line-height: 3rem;
+    text-align: left;
+}

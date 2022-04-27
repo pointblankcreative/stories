@@ -24,3 +24,13 @@ img {
     width: 100%;
     display: block;
 }
+
+// Flex Modifiers
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}

@@ -243,6 +243,56 @@ img {
   display: block;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  color: #fff;
+  font-size: 14vh;
+  line-height: 0.9;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #4f4f4f;
+  font-family: poppins, sans-serif;
+  letter-spacing: 1px;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #4f4f4f;
+  font-family: poppins, sans-serif;
+  letter-spacing: 1px;
+  line-height: 3rem;
+}
+
+p {
+  font-size: 2rem;
+  color: #4f4f4f;
+  font-family: poppins, sans-serif;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  text-align: left;
+}
+
 html.modal-active,
 body.modal-active {
   overflow: hidden;
@@ -300,7 +350,7 @@ body.modal-active {
   position: relative;
 }
 
-.content {
+.form-btn {
   min-height: 100%;
   height: 100%;
   background: #EBCCAB;
@@ -435,17 +485,31 @@ body.modal-active {
   margin: 0 auto;
 }
 
-h1 {
-  color: #fff;
-  font-size: 14vh;
-  line-height: 0.9;
-  font-weight: 700;
-  margin-bottom: 50px;
-  padding-bottom: 0;
+.overlay {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background-image: url("https://placekeanu.com/1200/400");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
 }
 
 .title-card {
   width: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 50px;
+}
+.title-card .sub-title {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 300;
 }
 
 .stories {
@@ -456,4 +520,75 @@ h1 {
 
 article {
   text-align: center;
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: #fff;
+}
+footer section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  width: 80%;
+}
+footer section .footer-text p {
+  font-size: 1.2rem;
+  color: #4f4f4f;
+  font-family: poppins, sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-left: 50px;
+}
+footer section .logo-cont {
+  width: 200px;
+}
+
+.btn-load-more {
+  font-size: 14px;
+  color: #fff;
+  background-color: #00712c;
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+}
+
+#loadMore,
+.share-btn {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  background-color: black;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+#loadMore:hover,
+.share-btn {
+  color: black;
+  background-color: #ccc;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
 }

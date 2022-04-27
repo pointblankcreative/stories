@@ -4,17 +4,31 @@
     margin: 0 auto;
 }
 
-h1 {
-    color: #fff;
-    font-size: 14vh;
-    line-height: 0.9;
-    font-weight: 700;
-    margin-bottom: 50px;
-    padding-bottom: 0;
+.overlay {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    background-image: url('https://placekeanu.com/1200/400');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
 }
 
 .title-card {
     width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 50px;
+    .sub-title {
+        color: #fff;
+        font-size: 2rem;
+        line-height: 3rem;
+        font-weight: 300;
+    }
 }
 
 .stories {
@@ -25,4 +39,70 @@ h1 {
 
 article {
     text-align: center;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #fff;
+    section {
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 80%;
+        .footer-text p {
+            @include fontSize(1.2rem);
+            margin: 0;
+            margin-left: 50px;
+        }
+        .logo-cont {
+            width: 200px;
+        }
+    }
+}
+
+
+.btn-load-more {
+    font-size: 14px;
+    color: #fff;
+    background-color: #00712c;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+
+// Pagination
+.content {
+    display: none;
+}
+
+#loadMore, 
+.share-btn {
+    width: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-color: black;
+    transition: all 0.3s ease-in;
+}
+
+#loadMore:hover, 
+.share-btn {
+    color: black;
+    background-color: #ccc;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+.noContent {
+    color: #000 !important;
+    background-color: transparent !important;
+    pointer-events: none;
 }
