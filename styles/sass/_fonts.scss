@@ -1,31 +1,32 @@
 @mixin fontSize ($sizeValue) {
     font-size: $sizeValue;
-    color: #4f4f4f;
-    font-family: poppins, sans-serif;
+    color: black;
+    font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
     
 }
 h1 {
     color: #fff;
+    font-family: 'Coustard', sans-serif;
     font-size: 14vh;
     line-height: 0.9;
-    font-weight: 700;
-    margin-bottom: 50px;
+    font-weight: 800;
+    margin: 0px;
     padding-bottom: 0;
 }
 
-h2 {
+h2, h3 {
     @include fontSize(3rem);
     line-height: 3.5rem;
-}
+    color: #fff;
+    font-family: 'Coustard', sans-serif;
+    margin: 10px 0;
 
-h3 {
-    @include fontSize(2.5rem);
-    line-height: 3rem;
 }
 
 p {
     @include fontSize(2rem);
     line-height: 3rem;
     text-align: left;
+    color: black;
 }
