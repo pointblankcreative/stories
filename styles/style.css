@@ -289,192 +289,68 @@ p {
   color: black;
 }
 
-html.modal-active,
-body.modal-active {
-  overflow: hidden;
-}
-
-#modal-container {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  z-index: 1;
-}
-
-#modal-container.one {
-  -webkit-transform: scaleY(0.01) scaleX(0);
-          transform: scaleY(0.01) scaleX(0);
-  -webkit-animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-
-#modal-container.one .modal-background .modal {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-
-#modal-container.one.out {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-
-#modal-container.one.out .modal-background .modal {
-  -webkit-animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-          animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-
-#modal-container .modal-background .modal {
-  background: #EBCCAB;
-  padding: 20px;
-  display: inline-block;
-  border-radius: 3px;
-  font-weight: 300;
-  position: relative;
-}
-
-.form-btn {
-  min-height: 100%;
-  height: 100%;
-  background: #EBCCAB;
-  position: relative;
-  z-index: 0;
-}
-
-.button {
-  display: inline-block;
+button {
   position: fixed;
   bottom: 0;
   right: 0;
   text-align: center;
+  width: 200px;
   padding: 15px 25px;
-  margin: 10px;
+  margin: 15px;
   font-size: 2rem;
-  background-color: #000;
-  color: #fff;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-.button:hover {
-  color: #fff;
+button:hover {
+  color: black;
   background: #ccc;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
-@-webkit-keyframes unfoldIn {
-  0% {
-    -webkit-transform: scaleY(0.005) scaleX(0);
-            transform: scaleY(0.005) scaleX(0);
-  }
-  50% {
-    -webkit-transform: scaleY(0.005) scaleX(1);
-            transform: scaleY(0.005) scaleX(1);
-  }
-  100% {
-    -webkit-transform: scaleY(1) scaleX(1);
-            transform: scaleY(1) scaleX(1);
-  }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
-@keyframes unfoldIn {
-  0% {
-    -webkit-transform: scaleY(0.005) scaleX(0);
-            transform: scaleY(0.005) scaleX(0);
-  }
-  50% {
-    -webkit-transform: scaleY(0.005) scaleX(1);
-            transform: scaleY(0.005) scaleX(1);
-  }
-  100% {
-    -webkit-transform: scaleY(1) scaleX(1);
-            transform: scaleY(1) scaleX(1);
-  }
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 60%;
 }
-@-webkit-keyframes unfoldOut {
-  0% {
-    -webkit-transform: scaleY(1) scaleX(1);
-            transform: scaleY(1) scaleX(1);
-  }
-  50% {
-    -webkit-transform: scaleY(0.005) scaleX(1);
-            transform: scaleY(0.005) scaleX(1);
-  }
-  100% {
-    -webkit-transform: scaleY(0.005) scaleX(0);
-            transform: scaleY(0.005) scaleX(0);
-  }
+
+.close {
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 15px;
 }
-@keyframes unfoldOut {
-  0% {
-    -webkit-transform: scaleY(1) scaleX(1);
-            transform: scaleY(1) scaleX(1);
-  }
-  50% {
-    -webkit-transform: scaleY(0.005) scaleX(1);
-            transform: scaleY(0.005) scaleX(1);
-  }
-  100% {
-    -webkit-transform: scaleY(0.005) scaleX(0);
-            transform: scaleY(0.005) scaleX(0);
-  }
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
-@-webkit-keyframes zoomIn {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes zoomIn {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes zoomOut {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-@keyframes zoomOut {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
+
 .wrapper {
   max-width: 1200px;
   width: 90%;
@@ -497,7 +373,7 @@ body.modal-active {
   width: 40%;
   height: 70vh;
   background-color: #007FB6;
-  padding-left: 20px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,22 +384,39 @@ body.modal-active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px;
 }
 .title-card .sub-title {
   color: black;
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 2.6rem;
   font-weight: 800;
 }
 
-.img-cont {
-  width: 50%;
+.header-img-cont {
+  width: 60%;
   height: 70vh;
-  background-image: url("../assets/AFL_Banner.png");
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.img-cont-l, .img-cont-m, .img-cont-r {
+  width: 33%;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.img-cont-l {
+  background-image: url("../assets/AFL_Left.png");
+}
+
+.img-cont-m {
+  background-image: url("../assets/v2_AFL_Center.png");
+}
+
+.img-cont-r {
+  background-image: url("../assets/AFL_Right.png");
 }
 
 .stories {
@@ -534,7 +427,7 @@ body.modal-active {
 
 article {
   text-align: center;
-  margin-bottom: 100px;
+  margin: 50px auto;
 }
 
 footer {
@@ -586,7 +479,9 @@ footer section .logo-cont {
 }
 
 .share-cont {
-  height: 30vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -598,6 +493,7 @@ footer section .logo-cont {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px;
 }
 .share-cont p {
   color: #fff;
@@ -611,7 +507,7 @@ footer section .logo-cont {
   text-decoration: none;
   margin: 20px auto;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 10px;
   border: 1px solid transparent;
   background-color: #007FB6;
 }
@@ -632,7 +528,16 @@ footer section .logo-cont {
   pointer-events: none;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1165px) {
+  h1 {
+    font-size: 12vh;
+  }
+  h1 .sub-title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 1000px) {
   .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -651,8 +556,25 @@ footer section .logo-cont {
     text-align: center;
   }
 
-  .img-cont {
+  .header-img-cont {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .img-cont-l, .img-cont-m, .img-cont-r {
     width: 100%;
     background-size: cover;
+  }
+}
+@media (max-width: 575px) {
+  .img-cont-l, .img-cont-r {
+    display: none;
+  }
+
+  .img-cont-m {
+    background-image: url("../assets/AFL_Center.png");
+    background-size: contain;
   }
 }

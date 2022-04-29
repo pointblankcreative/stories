@@ -1,4 +1,14 @@
-@media (max-width: 1110px) {
+@media (max-width: 1165px) {
+    h1 {
+        font-size: 12vh;
+        .sub-title {
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
     .header {
         flex-direction: column-reverse;
         justify-content: flex-start;
@@ -8,8 +18,23 @@
         width: 100%;
         text-align: center;
     }
-    .img-cont {
+    .header-img-cont {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .img-cont-l, .img-cont-m, .img-cont-r {
         width: 100%;
         background-size: cover;
     }
 }
+
+@media (max-width: 575px) {
+    .img-cont-l, .img-cont-r {
+        display: none;
+    }
+    .img-cont-m {
+        background-image: url('../assets/AFL_Center.png');
+        background-size: contain;
+    }
+}
+

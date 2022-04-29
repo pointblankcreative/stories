@@ -4,49 +4,51 @@
     margin: 0 auto;
 }
 
+// HEADER STYLES
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-// .overlay {
-//     height: 70vh;
-//     width: 100%;
-//     position: relative;
-//     left: 0;
-//     bottom: 0;
-//     background-image: url('https://placekeanu.com/1200/400');
-//     background-position: center;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     border: 1px solid #ccc;
-// }
-
 .title-card {
     width: 40%;
     height: 70vh;
     background-color: #007FB6;
-    padding-left: 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
     .sub-title {
         color: black;
         font-size: 2rem;
-        line-height: 3rem;
+        line-height: 2.6rem;
         font-weight: 800;
     }
 }
 
-.img-cont {
-    width: 50%;
+.header-img-cont {
+    width: 60%;
     height: 70vh;
-    background-image: url('../assets/AFL_Banner.png');
+    justify-content: space-evenly;
+}
+
+.img-cont-l, .img-cont-m, .img-cont-r {
+    width: 33%;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
+.img-cont-l {
+    background-image: url('../assets/AFL_Left.png');
+}
+.img-cont-m {
+    background-image: url('../assets/v2_AFL_Center.png');
+}
+.img-cont-r {
+    background-image: url('../assets/AFL_Right.png');
+}
+
+// MAIN SECTION
 
 .stories {
     max-width: 1200px;
@@ -56,7 +58,7 @@
 
 article {
     text-align: center;
-    margin-bottom: 100px;
+    margin: 50px auto;
 }
 
 footer {
@@ -102,11 +104,12 @@ transition: all 0.3s ease-in;
 }
 
 .share-cont {
-    height: 30vh;
+    height: fit-content;
     background-color: #000;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
     p {
         color: #fff;
     }
@@ -120,7 +123,7 @@ transition: all 0.3s ease-in;
     text-decoration: none;
     margin: 20px auto;
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     border: 1px solid transparent;
     background-color: #007FB6;
 }
