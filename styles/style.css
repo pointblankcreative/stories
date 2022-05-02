@@ -261,8 +261,8 @@ img {
 h1 {
   color: #fff;
   font-family: "Coustard", sans-serif;
-  font-size: 14vh;
-  line-height: 0.9;
+  font-size: 6rem;
+  line-height: 6.5rem;
   font-weight: 800;
   margin: 0px;
   padding-bottom: 0;
@@ -371,7 +371,7 @@ button:hover {
 
 .title-card {
   width: 40%;
-  height: 70vh;
+  height: 90vh;
   background-color: #007FB6;
   padding: 20px;
   display: -webkit-box;
@@ -388,13 +388,15 @@ button:hover {
 .title-card .sub-title {
   color: black;
   font-size: 2rem;
-  line-height: 2.6rem;
-  font-weight: 800;
+  line-height: 2.2rem;
+  font-weight: bolder;
+  padding: 0;
+  margin-bottom: 5px;
 }
 
 .header-img-cont {
   width: 60%;
-  height: 70vh;
+  height: 90vh;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -430,29 +432,30 @@ article {
   margin: 50px auto;
 }
 
+.share-btn-cont {
+  width: 60%;
+  margin: 0 auto;
+}
+
 footer {
   background-color: #fff;
 }
-footer section {
+footer .footer-cont {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px;
-  width: 80%;
+  width: 85%;
 }
-footer section .footer-text p {
-  font-size: 1.2rem;
+footer .footer-cont .footer-text p {
+  font-size: 1.6rem;
   color: black;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
-  margin: 0;
-  margin-left: 50px;
 }
-footer section .logo-cont {
-  width: 200px;
+footer .footer-cont .logo-cont {
+  padding: 20px;
 }
 
 .content {
@@ -529,12 +532,8 @@ footer section .logo-cont {
 }
 
 @media (max-width: 1165px) {
-  h1 {
-    font-size: 12vh;
-  }
-  h1 .sub-title {
-    font-size: 1.8rem;
-    line-height: 2rem;
+  footer .footer-cont {
+    width: 70%;
   }
 }
 @media (max-width: 1000px) {
@@ -553,6 +552,7 @@ footer section .logo-cont {
     height: -moz-fit-content;
     height: fit-content;
     width: 100%;
+    padding: 20px 40px;
     text-align: center;
   }
 
@@ -567,8 +567,17 @@ footer section .logo-cont {
     width: 100%;
     background-size: cover;
   }
+
+  .stories {
+    width: 80%;
+  }
 }
 @media (max-width: 575px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
   .img-cont-l, .img-cont-r {
     display: none;
   }
@@ -576,5 +585,57 @@ footer section .logo-cont {
   .img-cont-m {
     background-image: url("../assets/AFL_Center.png");
     background-size: contain;
+  }
+
+  .title-card,
+.stories {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .close {
+    margin: 5px;
+  }
+
+  .share-btn-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  footer .footer-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  footer .footer-cont .footer-text p {
+    text-align: center;
+    margin: 0;
+  }
+  footer .footer-cont .logo-cont {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  button {
+    left: 45%;
+    bottom: -20px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
