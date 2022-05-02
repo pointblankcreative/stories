@@ -261,8 +261,8 @@ img {
 h1 {
   color: #fff;
   font-family: "Coustard", sans-serif;
-  font-size: 6rem;
-  line-height: 6.5rem;
+  font-size: 5.8rem;
+  line-height: 6rem;
   font-weight: 800;
   margin: 0px;
   padding-bottom: 0;
@@ -532,6 +532,11 @@ footer .footer-cont .logo-cont {
 }
 
 @media (max-width: 1165px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
   footer .footer-cont {
     width: 70%;
   }
@@ -633,8 +638,8 @@ footer .footer-cont .logo-cont {
   }
 
   button {
-    left: 45%;
-    bottom: -20px;
+    left: calc(50% - 15px);
+    bottom: -15px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }

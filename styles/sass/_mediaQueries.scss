@@ -1,4 +1,8 @@
 @media (max-width: 1165px) {
+    h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
     footer { 
         .footer-cont {
             width: 70%;
@@ -76,10 +80,8 @@
     }
     }
     button {
-        
-
-        left: 45%;
-        bottom: -20px;
+        left: calc(50% - 15px);
+        bottom: -15px;
         transform: translate(-50%, -50%);
     }
 }
