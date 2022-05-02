@@ -1,6 +1,6 @@
 .wrapper {
     max-width: 1200px;
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -52,11 +52,11 @@
 
 // MAIN SECTION
 
-.stories {
-    max-width: 1200px;
-    width: 60%;
-    margin: 0 auto;
-}
+// .stories {
+//     max-width: 1200px;
+//     width: 60%;
+//     margin: 0 auto;
+// }
 
 article {
     text-align: center;
@@ -64,20 +64,31 @@ article {
 }
 
 // SHARE SECTION
-.share-btn-cont {
-    width: 60%;
-    margin: 0 auto;
+.share-cont p {
+    text-align: center;        
 }
+
+.share-btn-cont a {
+    width: 250px;
+    @include fontSize(2rem);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    padding: 15px 20px;
+
+}
+
 footer {
     background-color: #fff;
     .footer-cont {
         justify-content: space-around;
         align-items: center;
-        width: 85%;
+        width: 70%;
         .footer-text p {
-            @include fontSize(1.6rem);
+            font-weight: 300;
         }
         .logo-cont {
+            width: 350px;
             padding: 20px;
         }
     }

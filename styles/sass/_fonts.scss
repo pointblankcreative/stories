@@ -1,10 +1,11 @@
 @mixin fontSize ($sizeValue) {
     font-size: $sizeValue;
-    color: black;
+    color: #000;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
-    
+    font-weight: 400;
 }
+
 h1 {
     color: #fff;
     font-family: 'Coustard', sans-serif;
@@ -15,18 +16,29 @@ h1 {
     padding-bottom: 0;
 }
 
-h2, h3 {
-    @include fontSize(3rem);
+h2 {
+    @include fontSize(3.2rem);
     line-height: 3.5rem;
     color: #fff;
     font-family: 'Coustard', sans-serif;
+    font-weight: 800;
+    text-align: center;
     margin: 10px 0;
 
 }
 
+h3 {
+    @include fontSize(2.8rem);
+    line-height: 3rem;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 10px 0;
+}
+
 p {
     @include fontSize(2rem);
-    line-height: 3rem;
+    line-height: 2.5rem;
     text-align: left;
-    color: black;
+    color: #000;
 }
