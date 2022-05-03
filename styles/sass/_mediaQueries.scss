@@ -24,6 +24,13 @@
         width: 100%;
         background-size: cover;
     }
+    .modal-content {
+        width: 60%;
+    }
+    .close {
+        top: 3%;
+        left: 20%;
+    }
     .stories {
         width: 80%;
     }
@@ -58,6 +65,7 @@
     }
     .modal-content {
         width: 90%;
+        padding: 20px;
     }
     .close {
         top: 20px;
@@ -87,7 +95,6 @@
             width: 250px;
         }
     }
-
     footer .ty-footer-cont {
         grid-template-columns: 1fr;
         gap: 0;

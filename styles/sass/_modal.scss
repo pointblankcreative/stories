@@ -37,25 +37,25 @@ button:hover {
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 20px 50px;
     border: 5px solid black;
     border-radius: 10px;
     width: 40%;
 }
 
 .close {
-    color: black;
+    color: #000;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 3%;
+    left: 30%;
     font-size: 5rem;
-    font-weight: bold;
+    font-weight: 800;
     margin: 15px;
 }
 
 .close:hover,
 .close:focus {
-    color: white;
+    color: #007FB6;
     text-decoration: none;
     cursor: pointer;
 }
