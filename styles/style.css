@@ -792,6 +792,15 @@ footer .footer-cont .logo-cont {
     gap: 0;
     padding: 0 20px 20px;
   }
+  footer .ty-footer-cont .footer-text p {
+    text-align: center;
+    padding: 0;
+  }
+  footer .ty-footer-cont .logo-cont {
+    margin: 0 auto;
+    padding: 20px;
+    width: 250px;
+  }
 
   button {
     left: calc(50% - 15px);
