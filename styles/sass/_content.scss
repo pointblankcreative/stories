@@ -68,6 +68,7 @@ article {
 }
 #dots {
     cursor: pointer;
+    color: #fff;
 }
 
 #more {
@@ -94,6 +95,32 @@ article {
     font-weight: 800;
     padding: 15px 20px;
     margin: 0 15px;
+}
+
+.ty-btn-cont {
+margin: 0 auto;
+}
+
+.ty-btn-cont a {
+        @include fontSize(2rem);
+        width: 200px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #000;
+        font-weight: 800;
+        padding: 15px 0px;
+        margin: 15px;
+}
+
+.return-btn a {
+        @include fontSize(2rem);
+        width: 300px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #007FB6;
+        font-weight: 800;
+        padding: 15px 0px;
+        margin: 15px;
 
 }
 
@@ -116,6 +143,22 @@ footer {
     }
 }
 
+.ty-footer-cont {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    padding: 25px 0;
+    .footer-text p {
+        font-weight: 300;
+        padding: 20px;
+    }
+    
+    .logo-cont {
+        padding: 20px;
+    }
+}
 // Pagination
 .content {
     display: none;
