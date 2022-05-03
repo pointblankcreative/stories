@@ -465,6 +465,14 @@ article .img-cont {
   margin: 0 auto;
 }
 
+#dots {
+  cursor: pointer;
+}
+
+#more {
+  display: none;
+}
+
 .share-text {
   padding: 50px 0;
   display: -webkit-box;
