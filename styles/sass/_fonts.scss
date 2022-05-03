@@ -12,8 +12,6 @@ h1 {
     font-size: 5.8rem;
     line-height: 6rem;
     font-weight: 800;
-    margin: 0px;
-    padding-bottom: 0;
 }
 
 h2 {
@@ -23,7 +21,7 @@ h2 {
     font-family: 'Coustard', sans-serif;
     font-weight: 800;
     text-align: center;
-    margin: 10px 0;
+    margin-bottom: 5px;
 
 }
 
@@ -33,12 +31,13 @@ h3 {
     color: #fff;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    margin: 10px 0;
+    margin-bottom: 25px;
 }
 
 p {
     @include fontSize(2rem);
-    line-height: 2.5rem;
-    text-align: left;
+    line-height: 3rem;
     color: #000;
+    text-align: left;
+    margin-bottom: 25px;
 }

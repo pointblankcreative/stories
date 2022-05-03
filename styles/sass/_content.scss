@@ -18,14 +18,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .sub-title {
-        color: black;
-        font-size: 2rem;
-        line-height: 2.2rem;
-        font-weight: bolder;
-        padding: 0;
-        margin-bottom: 5px;
+    p {
+        font-weight: 700;
     }
+}
+
+.sub-title {
+    color: #000;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    font-weight: 400;
+    padding: 0;
+    margin-bottom: 15px;
 }
 
 .header-img-cont {
@@ -52,43 +57,54 @@
 
 // MAIN SECTION
 
-// .stories {
-//     max-width: 1200px;
-//     width: 60%;
-//     margin: 0 auto;
-// }
-
 article {
     text-align: center;
     margin: 50px auto;
+    .img-cont {
+        height: 75px;
+        width: 75px;
+        margin: 0 auto;
+    }
 }
 
 // SHARE SECTION
-.share-cont p {
-    text-align: center;        
+.share-text {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        text-align: center;
+        margin: 25px 0;
+    }
 }
 
 .share-btn-cont a {
-    width: 250px;
     @include fontSize(2rem);
+    width: 200px;
     text-transform: uppercase;
     color: #fff;
     font-weight: 800;
     padding: 15px 20px;
+    margin: 0 15px;
 
 }
 
 footer {
     background-color: #fff;
     .footer-cont {
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 25px;
         align-items: center;
         width: 70%;
+        padding: 25px 0;
         .footer-text p {
             font-weight: 300;
+            padding: 20px;
         }
         .logo-cont {
-            width: 350px;
             padding: 20px;
         }
     }
@@ -105,10 +121,13 @@ footer {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: larger;
+    @include fontSize(2.2rem);
     font-weight: 800;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 250px;
     padding: 10px;
-    margin-bottom: 50px;
+    margin: 50px auto;
 }
 
 #loadMore:hover,
