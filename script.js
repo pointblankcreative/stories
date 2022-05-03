@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // Load More
   $(".content").slice(0, 3).show();
   $("#loadMore").on("click", function(e){
     e.preventDefault();
