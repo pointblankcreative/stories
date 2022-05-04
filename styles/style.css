@@ -289,12 +289,12 @@ h2 {
 }
 
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   color: #000;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
-  line-height: 3rem;
+  line-height: 2.6rem;
   color: #fff;
   font-family: "Lato", sans-serif;
   text-align: center;
@@ -396,6 +396,7 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 40px;
 }
 
 .title-card {
@@ -467,7 +468,7 @@ article .img-cont {
 
 #dots {
   cursor: pointer;
-  color: #fff;
+  color: #80BFDB;
 }
 
 #more {
@@ -687,12 +688,16 @@ footer .footer-cont .logo-cont {
     padding: 20px 40px;
     text-align: center;
   }
+  .title-card p {
+    text-align: center;
+  }
 
   .header-img-cont {
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    height: 60vh;
   }
 
   .img-cont-l, .img-cont-m, .img-cont-r {
@@ -734,6 +739,10 @@ footer .footer-cont .logo-cont {
 
   .img-cont-l, .img-cont-r {
     display: none;
+  }
+
+  .header-img-cont {
+    height: 60vh;
   }
 
   .img-cont-m {

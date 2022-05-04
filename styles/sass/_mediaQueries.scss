@@ -15,10 +15,14 @@
         width: 100%;
         padding: 20px 40px;
         text-align: center;
+        p {
+            text-align: center;
+        }
     }
     .header-img-cont {
         width: 100%;
         justify-content: space-between;
+        height: 60vh;
     }
     .img-cont-l, .img-cont-m, .img-cont-r {
         width: 100%;
@@ -53,6 +57,9 @@
     }
     .img-cont-l, .img-cont-r {
         display: none;
+    }
+    .header-img-cont {
+        height: 60vh;
     }
     .img-cont-m {
         background-image: url('../assets/AFL_Center.png');
