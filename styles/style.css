@@ -429,6 +429,10 @@ button:hover {
   margin-bottom: 15px;
 }
 
+.mobile, .mobile-title {
+  display: none;
+}
+
 .header-img-cont {
   width: 60%;
   height: 90vh;
@@ -469,6 +473,11 @@ article .img-cont {
 #dots {
   cursor: pointer;
   color: #80BFDB;
+}
+
+#dots:hover,
+#dots:focus {
+  color: #000;
 }
 
 #more {
@@ -613,6 +622,12 @@ footer .footer-cont .logo-cont {
   transition: all 0.3s ease-in;
 }
 
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+
 .share-cont {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -655,12 +670,6 @@ footer .footer-cont .logo-cont {
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-}
-
-.noContent {
-  color: #000 !important;
-  background-color: transparent !important;
-  pointer-events: none;
 }
 
 @media (max-width: 1165px) {
@@ -728,16 +737,21 @@ footer .footer-cont .logo-cont {
     width: 90%;
   }
 
-  h1 {
+  .mobile-title {
+    display: block;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 30px;
     font-size: 4rem;
     line-height: 4.5rem;
   }
 
-  .title-card p {
-    text-align: center;
+  .mobile {
+    display: block;
   }
 
-  .img-cont-l, .img-cont-r {
+  .img-cont-l, .img-cont-r, .title-card {
     display: none;
   }
 

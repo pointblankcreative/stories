@@ -34,6 +34,10 @@
     margin-bottom: 15px;
 }
 
+.mobile, .mobile-title {
+    display: none;
+}
+
 .header-img-cont {
     width: 60%;
     height: 90vh;
@@ -70,6 +74,10 @@ article {
 #dots {
     cursor: pointer;
     color: #80BFDB;
+}
+#dots:hover,
+#dots:focus {
+    color: #000;
 }
 
 #more {
@@ -161,6 +169,7 @@ footer {
         padding: 20px;
     }
 }
+
 // Pagination
 .content {
     display: none;
@@ -187,6 +196,12 @@ color: #ccc;
 transition: all 0.3s ease-in;
 }
 
+.noContent {
+    color: #000 !important;
+    background-color: transparent !important;
+    pointer-events: none;
+}
+// Share Section
 .share-cont {
     height: fit-content;
     background-color: #000;
@@ -221,8 +236,3 @@ transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
 
-.noContent {
-    color: #000 !important;
-    background-color: transparent !important;
-    pointer-events: none;
-}

@@ -48,14 +48,17 @@
     .wrapper {
         width: 90%;
     }
-    h1 {
+    .mobile-title {
+        display: block;
+        order: 1;
+        margin-top: 30px;
         font-size: 4rem;
         line-height: 4.5rem;
     }
-    .title-card p {
-        text-align: center;
+    .mobile {
+        display: block;
     }
-    .img-cont-l, .img-cont-r {
+    .img-cont-l, .img-cont-r, .title-card {
         display: none;
     }
     .header-img-cont {
