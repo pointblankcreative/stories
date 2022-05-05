@@ -453,7 +453,7 @@ button:hover {
 }
 
 .img-cont-m {
-  background-image: url("../assets/v2_AFL_Center.png");
+  background-image: url("../assets/AFL_Center.png");
 }
 
 .img-cont-r {
@@ -626,6 +626,8 @@ footer .footer-cont .logo-cont {
   color: #000 !important;
   background-color: transparent !important;
   pointer-events: none;
+  border: transparent !important;
+  display: none;
 }
 
 .share-cont {

@@ -7,7 +7,7 @@ $(document).ready(function(){
     $(".content:hidden").slice(0, 3).slideDown();
     
     if($(".content:hidden").length == 0) {
-      $("#loadMore").text("End of stories").addClass("noContent");
+      $("#loadMore").text(" ").addClass("noContent");
     }
   });
 })
