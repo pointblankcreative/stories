@@ -285,17 +285,17 @@ h2 {
   font-family: "Coustard", sans-serif;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 5px;
+  margin: 15px 0;
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   color: #000;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
   font-weight: 400;
-  line-height: 2.6rem;
-  color: #fff;
+  line-height: 3rem;
+  color: #B9DBE9;
   font-family: "Lato", sans-serif;
   text-align: center;
   margin-bottom: 25px;
@@ -401,7 +401,7 @@ button:hover {
 
 .title-card {
   width: 40%;
-  height: 90vh;
+  height: 80vh;
   background-color: #007FB6;
   padding: 20px;
   display: -webkit-box;
@@ -435,7 +435,7 @@ button:hover {
 
 .header-img-cont {
   width: 60%;
-  height: 90vh;
+  height: 80vh;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -468,11 +468,25 @@ article .img-cont {
   height: 75px;
   width: 75px;
   margin: 0 auto;
+  opacity: 50%;
+}
+article .img-cont-2 {
+  height: 75px;
+  width: 75px;
+  margin: 0 auto;
+  opacity: none;
 }
 
 #dots {
   cursor: pointer;
-  color: #80BFDB;
+  font-size: 2.8rem;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #B9DBE9;
+  font-family: 800;
 }
 
 #dots:hover,
@@ -502,7 +516,7 @@ article .img-cont {
 }
 .share-text p {
   text-align: center;
-  margin: 25px 0;
+  margin-bottom: 25px;
 }
 
 .share-btn-cont a {
@@ -517,6 +531,19 @@ article .img-cont {
   font-weight: 800;
   padding: 15px 20px;
   margin: 0 15px;
+}
+
+.ty-cont {
+  height: 90vh;
+}
+.ty-cont h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+.ty-cont p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
 }
 
 .ty-btn-cont {
@@ -681,6 +708,10 @@ footer .footer-cont .logo-cont {
   }
 }
 @media (max-width: 1000px) {
+  .wrapper {
+    width: 80%;
+  }
+
   .header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

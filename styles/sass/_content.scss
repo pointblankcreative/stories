@@ -13,7 +13,7 @@
 }
 .title-card {
     width: 40%;
-    height: 90vh;
+    height: 80vh;
     background-color: #007FB6;
     padding: 20px;
     display: flex;
@@ -40,7 +40,7 @@
 
 .header-img-cont {
     width: 60%;
-    height: 90vh;
+    height: 80vh;
     justify-content: space-evenly;
 }
 
@@ -69,11 +69,21 @@ article {
         height: 75px;
         width: 75px;
         margin: 0 auto;
+        opacity: 50%;
+    }
+    .img-cont-2 {
+        height: 75px;
+        width: 75px;
+        margin: 0 auto;
+        opacity: none;
     }
 }
 #dots {
     cursor: pointer;
-    color: #80BFDB;
+    @include fontSize(2.8rem);
+    line-height: 3rem;
+    color: #B9DBE9;
+    font-family: 800;
 }
 #dots:hover,
 #dots:focus {
@@ -93,7 +103,7 @@ article {
     align-items: center;
     p {
         text-align: center;
-        margin: 25px 0;
+        margin-bottom: 25px;
     }
 }
 
@@ -105,6 +115,21 @@ article {
     font-weight: 800;
     padding: 15px 20px;
     margin: 0 15px;
+}
+
+// Thank You Page
+
+.ty-cont {
+    height: 90vh;
+    h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+    p {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
 }
 
 .ty-btn-cont {

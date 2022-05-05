@@ -6,6 +6,9 @@
 }
 
 @media (max-width: 1000px) {
+    .wrapper {
+        width: 80%;
+    }
     .header {
         flex-direction: column-reverse;
         justify-content: flex-start;
