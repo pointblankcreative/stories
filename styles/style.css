@@ -269,8 +269,8 @@ img {
 h1 {
   color: #fff;
   font-family: "Coustard", sans-serif;
-  font-size: 5.8rem;
-  line-height: 6rem;
+  font-size: 5rem;
+  line-height: 5.2rem;
   font-weight: 400;
 }
 
@@ -357,7 +357,7 @@ button:hover {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px 50px;
+  padding: 20px;
   border: 5px solid black;
   border-radius: 10px;
   width: 40%;
@@ -419,6 +419,10 @@ button:hover {
   font-weight: 700;
 }
 
+.sub-heading {
+  margin: 75px auto;
+}
+
 .sub-title {
   color: #000;
   font-size: 2rem;
@@ -444,7 +448,7 @@ button:hover {
 .img-cont-l, .img-cont-m, .img-cont-r {
   width: 33%;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -703,11 +707,11 @@ footer .footer-cont .logo-cont {
 
 @media (max-width: 1165px) {
   h1 {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 4.2rem;
+    line-height: 4.5rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
   .wrapper {
     width: 80%;
   }
@@ -744,7 +748,11 @@ footer .footer-cont .logo-cont {
 
   .img-cont-l, .img-cont-m, .img-cont-r {
     width: 100%;
-    background-size: cover;
+    background-size: contain;
+  }
+
+  .sub-heading {
+    margin: 25px auto;
   }
 
   .modal-content {
@@ -801,6 +809,10 @@ footer .footer-cont .logo-cont {
 .stories {
     width: 100%;
     padding: 20px;
+  }
+
+  .mobile {
+    overflow: hidden;
   }
 
   .modal-content {

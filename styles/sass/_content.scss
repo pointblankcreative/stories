@@ -24,6 +24,10 @@
     }
 }
 
+.sub-heading {
+    margin: 75px auto;
+}
+
 .sub-title {
     color: #000;
     font-size: 2rem;
@@ -47,7 +51,7 @@
 .img-cont-l, .img-cont-m, .img-cont-r {
     width: 33%;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .img-cont-l {

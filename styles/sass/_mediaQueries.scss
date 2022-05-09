@@ -1,11 +1,11 @@
 @media (max-width: 1165px) {
     h1 {
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 4.2rem;
+        line-height: 4.5rem;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
     .wrapper {
         width: 80%;
     }
@@ -29,7 +29,10 @@
     }
     .img-cont-l, .img-cont-m, .img-cont-r {
         width: 100%;
-        background-size: cover;
+        background-size: contain;
+    }
+    .sub-heading {
+        margin: 25px auto;
     }
     .modal-content {
         width: 60%;
@@ -75,6 +78,9 @@
     .stories {
         width: 100%;
         padding: 20px;
+    }
+    .mobile {
+        overflow: hidden;
     }
     .modal-content {
         width: 90%;
