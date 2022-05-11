@@ -269,9 +269,10 @@ img {
 h1 {
   color: #fff;
   font-family: "Coustard", sans-serif;
-  font-size: 5rem;
-  line-height: 5.2rem;
+  font-size: 4.5rem;
+  line-height: 5rem;
   font-weight: 400;
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -310,7 +311,7 @@ p {
   line-height: 3rem;
   color: #000;
   text-align: left;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 button {
@@ -396,14 +397,14 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .title-card {
   width: 40%;
   height: 80vh;
   background-color: #007FB6;
-  padding: 20px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,8 +711,8 @@ footer .footer-cont .logo-cont {
 
 @media (max-width: 1165px) {
   h1 {
-    font-size: 4.2rem;
-    line-height: 4.5rem;
+    font-size: 4rem;
+    line-height: 4.2rem;
   }
 }
 @media (max-width: 1020px) {
