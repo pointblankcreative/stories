@@ -54,6 +54,9 @@
     .wrapper {
         width: 90%;
     }
+    .header {
+        padding: 0;
+    }
     .mobile-title {
         display: block;
         order: 1;
@@ -61,8 +64,12 @@
         font-size: 4rem;
         line-height: 4.5rem;
     }
+    h2 {
+        margin-top: 50px;
+    }
     .mobile {
         display: block;
+        overflow: hidden;
     }
     .img-cont-l, .img-cont-r, .title-card {
         display: none;
@@ -78,9 +85,6 @@
     .stories {
         width: 100%;
         padding: 20px;
-    }
-    .mobile {
-        overflow: hidden;
     }
     .modal-content {
         width: 90%;
@@ -132,6 +136,16 @@
         left: calc(50% - 15px);
         bottom: -15px;
         transform: translate(-50%, -50%);
+    }
+    .ty-cont {
+        display: block;
+    }
+    .ty-btn-cont {
+        flex-direction: column;
+        a {
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
     }
 }
 
